@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="IndexCSS.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="IndexJS1.js"></script>
+</head>
+
+<body onload="load();">
+    <div id="loader"></div>
+
+    <nav id="nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">InfyGames</label>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="FeedBack.html">Feedback</a></li>
+            <li><img src="logorb.png" id="logorb" /></li>
+            <li>
+                <p id="copyright">&copy; ANANT</p>
+            </li>
+        </ul>
+    </nav>
+    <section id="section">
+        <div id="playername">
+            <p id="gamename">TIC-TAC-TOE</p>
+            <form>
+                <label for="playern1" id="playerlabel1">Enter Player 1 (X) </label>
+                <input type="text" value="PLAYER 1" id="playern1"><br>
+                <label for="playern1" id="playerlabel2">Enter Player 2 (O) </label>
+                <input type="text" value="PLAYER 2" id="playern2"><br>
+                <input type="reset" value="Reset" id="reset">
+            </form>
+            <input type="submit" onclick="submit();" value="Submit" id="submit">
+            <img src="logorb.png" id="logorb1" />
+            <p id="copyright1">&copy; ANANT</p>
+        </div>
+        <div id="griddiv">
+            <div class="box" id="item1" onclick="item1();"><img src="" id="img1" /></div>
+            <div class="box" id="item2" onclick="item2();"><img src="" id="img2" /></div>
+            <div class="box" id="item3" onclick="item3();"><img src="" id="img3" /></div>
+
+            <div class="box" id="item4" onclick="item4();"><img src="" id="img4" /></div>
+            <div class="box" id="item5" onclick="item5();"><img src="" id="img5" /></div>
+            <div class="box" id="item6" onclick="item6();"><img src="" id="img6" /></div>
+
+            <div class="box" id="item7" onclick="item7();"><img src="" id="img7" /></div>
+            <div class="box" id="item8" onclick="item8();"><img src="" id="img8" /></div>
+            <div class="box" id="item9" onclick="item9();"><img src="" id="img9" /></div>
+        </div>
+        <div id="windiv">
+            <img src="win.gif" id="winimg"><br>
+            <p id="result"></p>
+        </div>
+
+    </section>
+</body>
+
+</html>
