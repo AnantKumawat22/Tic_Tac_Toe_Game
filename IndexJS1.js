@@ -9,6 +9,14 @@ function load(){
     document.getElementById("loader").style.display = "none";
 }
 
+function check(){
+    if(document.getElementById("check").checked){
+        document.getElementById("playername").style.display="none";
+    }
+    else if(!(document.getElementById("check").checked)){
+        document.getElementById("playername").style.display="block";
+    }
+}
 
 function submit(){
     document.getElementById("playername").style.display="none";
