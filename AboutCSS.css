@@ -169,7 +169,7 @@ a:active,a:hover{
     }
 }
 
-.credit{
+#credit{
     position: relative;
     top:20px;
     font-size: 50px;
@@ -182,14 +182,14 @@ a:active,a:hover{
 }
 
 @media(max-width:470px){
-    .credit{
+    #credit{
         font-size: 30px;
         margin-bottom: 25px;
     }
 }
 
 @media(max-width:610px){
-    .credit{
+    #credit{
         margin-bottom: 30px;
     }
 }
