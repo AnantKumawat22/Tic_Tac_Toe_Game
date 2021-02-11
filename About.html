@@ -11,12 +11,20 @@
         function load(){
             document.getElementById("loader").style.display = "none";
 }
+        function check() {
+            if (document.getElementById("check").checked) {
+                document.getElementById("credit").style.display = "none";
+            }
+            else if (!(document.getElementById("check").checked)) {
+                document.getElementById("credit").style.display = "block";
+            }
+        }
     </script>
 </head>
 <body onload="load();">
     <div id="loader"></div>
     <nav id="nav">
-        <input type="checkbox" id="check">
+        <input type="checkbox" id="check" onclick="check();">
         <label for="check" class="checkbtn" >
             <i class="fas fa-bars"></i>
         </label>
@@ -31,7 +39,7 @@
             <li><p id="copyright">&copy; ANANT</p></li>
         </ul>  
     </nav>
-    <div class="credit">Anant Kumawat.</div>
+    <div id="credit">Anant Kumawat.</div>
     <section id="section">
         
         <div><img src="logo.png" id="anantlogo"></div>
