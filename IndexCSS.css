@@ -363,7 +363,7 @@ a:active,a:hover{
 
 #logorb1{
     position: relative;
-    top: 122px;
+    top: 110px;
     left: -19px;
     width: 110px;
     height: 100px;
@@ -371,6 +371,7 @@ a:active,a:hover{
 
 #copyright1{
     position: relative;
+    font-weight:bold;
     top: 115px;
     left: 104px;
 }
